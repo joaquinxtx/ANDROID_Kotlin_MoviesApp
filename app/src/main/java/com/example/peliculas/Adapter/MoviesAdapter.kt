@@ -35,7 +35,7 @@ class MoviesAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(movie: MovieDb) {
-            binding.title.text = movie.title
+
             Glide
                 .with(binding.root.context)
                 .load("https://image.tmdb.org/t/p/w185/${movie.poster_path}")
